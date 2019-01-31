@@ -1,0 +1,29 @@
+{
+    "name": "firerabbit/sociate-baidu",
+    "description": "百度第三方登录",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fire Rabbit",
+            "email": "huotu@huotuyouxi.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Firerabbit\\Baidu\\": "src/Firerabbit/Baidu"
+        }
+    },
+
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
+    }
+}
