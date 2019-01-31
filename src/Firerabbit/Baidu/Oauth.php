@@ -12,9 +12,9 @@ class Oauth
     public static function getAuthoriteCodeUrl()
     {
         $params = [
-            'client_id' => config('services..client_id'),
+            'client_id' => config('services.baidu.client_id'),
             'response_type' => 'code',
-            'redirect_uri' => config('services..redirect'),
+            'redirect_uri' => config('services.baidu.redirect'),
         ];
 
         return self::AUTHORITE_CODE_URL . '?' . http_build_query($params);
@@ -25,9 +25,9 @@ class Oauth
         $params = [
             'grant_type' => 'authorization_code',
             'code' => $code,
-            'client_id' => config('services..client_id'),
-            'client_secret' => config('services..client_secret'),
-            'redirect_uri' => config('services..redirect'),
+            'client_id' => config('services.baidu.client_id'),
+            'client_secret' => config('services.baidu.client_secret'),
+            'redirect_uri' => config('services.baidu.redirect'),
         ];
 
         $response = self::post(self::AUTHORITE_TOKEN_URL, $params);
