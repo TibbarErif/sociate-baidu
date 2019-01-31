@@ -5,9 +5,9 @@ use GuzzleHttp\Client;
 
 class Oauth
 {
-    const AUTHORITE_CODE_URL = 'http://openapi..com/oauth/2.0/authorize';
-    const AUTHORITE_TOKEN_URL = 'https://openapi..com/oauth/2.0/token';
-    const USER_INFO_URL = 'https://openapi..com/rest/2.0/passport/users/getInfo';
+    const AUTHORITE_CODE_URL = 'http://openapi.baidu.com/oauth/2.0/authorize';
+    const AUTHORITE_TOKEN_URL = 'https://openapi.baidu.com/oauth/2.0/token';
+    const USER_INFO_URL = 'https://openapi.baidu.com/rest/2.0/passport/users/getInfo';
 
     public static function getAuthoriteCodeUrl()
     {
